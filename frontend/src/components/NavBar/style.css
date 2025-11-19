@@ -1,0 +1,134 @@
+   /* Example media query for small screens */
+  @media (max-width: 300px), (max-width: 850px) {
+    .navbar-brand{
+        display: none;
+    }
+
+    .nav-link.help{
+        position: relative;
+        left: 175px !important;
+    }
+  
+    .nav-link.activity{
+   display: none;
+    
+    }
+    .nav-link.services{
+        display: none;
+    }
+
+
+
+    .nav-login{
+        position: relative;
+        left: 170px !important;
+        top: 7px;
+    
+    }
+
+   }
+
+   
+   
+      
+
+
+.navbar {
+    position: relative;
+   
+
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-link-container{
+    margin:auto;
+    max-width:800px;
+    
+}
+
+
+.nav-bar{
+
+    display: flex;
+    height: 56px;
+    background-color: #f8f9fa;
+
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.pay-nav-container{
+   
+}
+
+
+
+
+.pay-nav-bar{
+    position: relative;
+   
+    background-color: #f8f9fa;
+    height: 56px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-contents{
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.app_logo{
+    position: relative;
+    border-radius: 560px;
+    max-width: 50px;
+    top: 8px;
+}
+
+.nav-login{
+    position: relative;
+    left: 190px;
+    top: 7px;
+
+}
+
+ 
+.nav-link.activity{
+    position: relative;
+    left: 150px;
+    top: 5px;
+
+}
+.nav-link.services{
+    position: relative;
+    right: 40px;
+    top: 5px;
+
+}
+.nav-link.help{
+    position: relative;
+    left: 200px;
+    top: 5px;
+
+}
+
+.navbar-brand{
+
+    position: relative;
+    left :10px;
+    top: 5px;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cypress-cucumber-framework",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Framework with Extent Reports",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run-chrome": "cypress run --browser chrome",
+    "test": "npm run cypress:run-chrome",
+    "test:elements": "node -e \"require('./configs/element-manager').printElements()\"",
+    "test:elements:login": "node -e \"require('./configs/element-manager').printElements('login')\"",
+    "test:elements:dashboard": "node -e \"require('./configs/element-manager').printElements('dashboard')\"",
+    "report:generate": "node generate-report.js",
+    "clean:reports": "rm -rf reports/* || true",
+    "cleanModules": "rm -rf node_modules package-lock.json",
+    "report": "cucumber-js --format json:reports/cucumber_report.json --format @cucumber/pretty-formatter --format html:reports/cucumber_report.html"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/webpack-preprocessor": "^7.0.2",
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress": "^13.6.0",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "dependencies": {
+    "config": "^4.1.1",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7"
+  }
+}

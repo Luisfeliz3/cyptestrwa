@@ -1,0 +1,39 @@
+{
+  "name": "mern-cypress-docker",
+  "version": "1.0.0",
+  "description": "MERN stack with Cypress testing in Docker",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "start:detached": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "clean": "docker-compose down -v --rmi all",
+    "start:dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run server",
+    "dev:frontend": "cd frontend && npm start",
+    "test": "cd cypress/cypress && npm test",
+    "test:open": "cd cypress/cypress && npx cypress open",
+    "install:all": "npm run install:backend && npm run install:frontend && npm run install:cypress",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:cypress": "cd cypress/cypress && npm install",
+    "update:all": "npm run update:backend && npm run update:frontend && npm run update:cypress",
+    "update:backend": "cd backend && ncu -u && npm install",
+    "update:frontend": "cd frontend && ncu -u && npm install",
+    "update:cypress": "cd cypress/cypress && ncu -u && npm install",
+    "nav:backend": "cd backend",
+    "nav:frontend": "cd frontend",
+    "nav:cypress": "cd cypress/cypress",
+    "nav:root": "cd .",
+    "nav:back": "cd ..",
+    "docker:build": "docker-compose build --no-cache",
+    "docker:logs": "docker-compose logs -f",
+    "docker:clean": "docker system prune -f"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "npm-check-updates": "^16.14.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3"
+  }
+}

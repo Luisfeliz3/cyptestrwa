@@ -1,0 +1,226 @@
+/* Example media query for small screens */ @media (max-width: 800px) and (max-width: 800px) {
+ 
+  #sidebar{
+    display: none;
+  }
+ 
+  .activity-container{
+   margin: auto !important;
+  }
+  .activity-card.vital{
+   
+    position: relative;
+    
+  }
+
+  .statement-label{
+      right: 140px !important;
+  }
+  
+  .statement-icon{
+    position: absolute;
+  
+    right: 285px !important;
+    bottom: 15px !important;
+  
+  }
+
+  .split-label{
+    left: 9px !important;
+    bottom: 80px !important;
+    font-size: 14px;
+  }
+
+  .split-icon{
+    top: 50px !important;
+
+    left: 280px !important;
+
+ }
+
+ .split-terms{
+ 
+  bottom: 15px !important;
+  right: 196px !important;
+
+}
+
+.activity-card-group{
+ 
+  display: grid !important;
+  min-width :610px !important;
+ 
+ 
+}
+
+ 
+
+
+}
+/* ------------------------------------------- */
+
+@media only screen and (max-width: 500px) {
+  .activity-card-group{
+  margin: auto;
+ 
+  }
+  .activity-container{
+    position: relative;
+    top: 550px;
+    margin: auto !important;
+    right: 43px;
+
+  }
+
+  .activity-card.vital{
+    width: 366px;
+
+  }
+}
+
+
+
+.activity-card-group{
+  position :relative;
+  display: inline-flex;
+  max-width :733px;
+ 
+  bottom: 583px;
+  right: 300px;
+}
+
+.activity {
+ position: relative;
+  right: -440px;
+  max-width: 20px;
+
+}
+
+.recent-pos{
+    position: relative;
+    right: -0px;  
+}
+
+.activity-card.vital{
+  background-color: #fff;
+  position: relative;
+  height: 120px;
+  min-width : 244px;
+ 
+
+}
+
+.activity-card-split{
+  position: relative;
+  background-color: #fff;
+  /* display:inline-grid; */
+  bottom: 520px;
+  height: 120px;
+  max-width: 733px;
+  left :140px;
+}
+
+.split-label{
+  position: absolute;
+  margin: auto;
+  bottom: 85px;
+  left: 50px;
+
+
+}
+.split-terms{
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  right: 280px;
+
+}
+.split-icon{
+  position: absolute;
+  max-width : 30px;
+  top: 42px;
+
+ left: 356px;
+ color : #0d6efd;
+
+}
+
+
+.activity-dl-statement{
+  position: relative;
+  background-color: #fff;
+  /* display:inline-grid; */
+  bottom: 701px;
+  height: 60px;
+  max-width: 733px;
+  left: 140px;
+
+}
+
+.statement-icon{
+  position: absolute;
+    margin :auto;
+    color : #0d6efd;
+    right: 363px;
+    top:20px;
+
+}
+.statement-label{
+  position: absolute;
+    margin :auto;
+    right: 210px;
+ 
+}
+
+.activity-card-spend{
+  position: relative;
+  background-color: #fff;
+  bottom: 579px;
+  height: 150px;
+  max-width: 733px;
+  left :140px;
+
+}
+
+
+.activity-card-title{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+
+}
+.activity-card-text{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  bottom: 5px;
+
+
+}
+
+#recent-activity{
+  position: relative;
+  max-width: 733px;
+  bottom: 665px;
+  left: 140px;
+
+}
+
+.charges-tooltip{
+  position: relative;
+  left: 76px;
+  top:15px;
+}
+
+.recent-activity-table{
+  top : 100px;
+}
+
+#sidebar{
+  left: 126px;
+
+}
+ 

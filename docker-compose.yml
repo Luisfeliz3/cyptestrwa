@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mern-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user1
+      MONGO_INITDB_ROOT_PASSWORD: password1234
+    volumes:
+      - mongodb_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mern-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb+srv://user1:password1234@cluster0.k6ma6.mongodb.net/paymentcenter?retryWrites=true&w=majority
+      - JWT_SECRET=your-jwt-secret
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: mern-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://frontend:3001
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+  cypress:
+    build:
+      context: ./cypress
+      dockerfile: Dockerfile
+    container_name: cypress-tests
+    depends_on:
+      - frontend
+      - backend
+    environment:
+      - CYPRESS_BASE_URL=http://frontend:3000
+      - CYPRESS_API_URL=http://backend:3001/api
+    volumes:
+      - ./cypress:/e2e
+      - /e2e/node_modules
+    command: [ "npx", "cypress", "run" ]
+
+volumes:
+  mongodb_data:

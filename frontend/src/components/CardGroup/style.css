@@ -1,0 +1,228 @@
+   /* Example media query for small screens */
+@media only screen and (max-width: 500px) {
+ 
+   
+    .card-group{
+ 
+        padding: 10px;
+
+    }
+
+    .card-body{
+       margin: 0 auto;
+    }
+
+    .card-text.pay{
+       flex: auto !important;
+    }
+
+    .map-button{
+        bottom: 10px !important;
+    }
+
+    .map-miv-val{
+ 
+   
+        left: -95px !important;
+
+        
+    }
+    /* .map-payed-val{
+ 
+        margin: auto !important;
+        left: -128px !important;
+        top: 19px !important;
+
+    
+    }
+
+    
+    .map-payed-title-2{
+     
+        left: 39px !important;
+        top: -9px !important;      
+    }
+
+    .map-button-pay {
+        top: 0px !important;
+        left: 43px !important;
+
+    }
+
+.sb-value{
+ 
+        left: 20px  !important;
+    }
+        
+    .tb-value{
+  
+        left: 42px  !important;
+    }
+
+
+    .map-title{
+ 
+        left: 15px !important;
+    }
+    
+    .sb-button{
+        
+        left: 15px !important;
+     
+    }
+
+
+
+    .min-pay-text{
+        left: 7px !important;
+    }
+    
+    .map-title-2 {
+        left: 65px !important;
+    }
+
+    .tb-title {
+        left: 43px !important;
+    }
+
+   .tb-credit-title{
+    left: 8px !important;
+   }
+
+   .tb-link{
+    left: 35px !important;
+   } */
+  
+
+}
+
+   
+   
+   
+   
+   .card-group{
+        max-width :800px;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+
+
+.card-body{
+    margin: auto;
+ 
+}
+
+.card-text{
+
+    color:black
+}
+
+.sb-value{
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    color: green;
+    left: 25px;
+}
+
+.sb-date{
+    position: relative;
+    left: 40px;
+    bottom: 22px;
+}
+.sb-button{
+    position: relative;
+    left: 15px;
+    bottom: 22px;
+}
+
+.tb-value{
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    color: green;
+    left: 25px;
+}
+.tb-title{
+    position: relative;
+    left: 25px;
+}
+
+.tb-credit-title{
+    position: relative;
+    bottom: 20px;
+}
+
+.tb-link {
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+
+}
+
+.map-title{
+    position: relative;
+    left: 25px;
+}
+
+
+.map-title-2{
+    position: relative;
+    left: 75px;
+    color: red;
+    font-weight: 600;
+}
+
+.map-button{
+
+    position: relative;
+    left: 34px;
+    bottom: 32px;
+}
+
+.map-miv-val{
+    position: relative;
+    left: 55px;
+    color: red;
+    font-weight: 600;
+}
+
+.map-payed{
+    position: relative;
+    left: 34px;
+   
+    
+}
+
+.map-payed-title-2{
+    position: relative;
+    left: 34px;
+    top: 5px;
+
+    color: green;
+}
+
+.map-payed-val{
+    position: relative;
+    left: 34px;
+
+    top: 5px;
+
+}
+
+.map-button-pay {
+    position: relative;
+    left: 34px;
+    top: 15px;
+
+
+}
+
+.min-pay-text{
+    position: relative;
+    bottom: 18px;
+    left: 20px;
+
+}
+
