@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 Given('I am on the login page', () => {
-  cy.visit('http://localhost:3000/dashboard');
+  cy.visit('http://frontend:3000/dashboard');
 });
 
 When('I enter username {string} and password {string}', (username, password) => {

@@ -52,7 +52,7 @@ module.exports = defineConfig({
     trashAssetsBeforeRuns: true
   },
     env: {
-    apiUrl: process.env.CYPRESS_API_URL || 'http://localhost:5001'
+    apiUrl: process.env.CYPRESS_API_URL || 'http://frontend:3001'
   }
 
 });
